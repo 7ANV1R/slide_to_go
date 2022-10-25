@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:slide_to_go/animation_page.dart';
+import 'package:slide_to_go/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const TypingAnimation(),
+      home: const MyHomePage(),
     );
   }
 }

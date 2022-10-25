@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:slide_to_act/slide_to_act.dart';
-import 'package:slide_to_go/bouncing_dot.dart';
+import 'package:slide_to_go/animation_page.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -12,6 +12,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.deepPurple[100],
       body: Stack(
+        alignment: Alignment.center,
         children: [
           Positioned(
             top: -size.height * 0.15,
@@ -26,13 +27,17 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
           ),
-          const Positioned(
+          Positioned(
             bottom: 150,
-            left: 16,
-            right: 16,
-            child: SizedBox(
-              height: 80,
-              child: BouncingDot(),
+            child: AnimatedContainer(
+              duration: const Duration(seconds: 1),
+              height: 70,
+              width: size.width,
+              decoration: const BoxDecoration(
+                color: Colors.deepPurple,
+                shape: BoxShape.circle,
+              ),
+              child: const TypingAnimation(),
             ),
           ),
           Positioned(
