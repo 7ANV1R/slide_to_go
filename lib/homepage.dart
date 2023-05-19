@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:slide_to_go/animation_page.dart';
 import 'package:slide_to_go/slide_to_act.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -25,19 +24,6 @@ class MyHomePage extends StatelessWidget {
                 color: Colors.deepPurple,
                 shape: BoxShape.circle,
               ),
-            ),
-          ),
-          Positioned(
-            bottom: 150,
-            child: AnimatedContainer(
-              duration: const Duration(seconds: 1),
-              height: 70,
-              width: size.width,
-              decoration: const BoxDecoration(
-                color: Colors.deepPurple,
-                shape: BoxShape.circle,
-              ),
-              child: const TypingAnimation(),
             ),
           ),
           Positioned(
