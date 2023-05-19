@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:slide_to_act/slide_to_act.dart';
 import 'package:slide_to_go/animation_page.dart';
+import 'package:slide_to_go/slide_to_act.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
